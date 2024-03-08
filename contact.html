@@ -2,12 +2,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flore Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div container>
+  <div class="container">
     <header>
-      <h1>Flore Peduzzi</h1>
-      <h2>Developer</h2>
+      <div class="infos">
+        <h1>FLORE PEDUZZI</h1>
+        <h2>Developer</h2>
+      </div>
       <nav>
         <a href="aboutme.html">ABOUT ME</a>
         <a href="skills.html">SKILLS</a>
@@ -16,15 +19,14 @@
       </nav>
     </header>
     <main>
-      <div>
-        <h3>CONTACT</h3>
-        <h4>FOLLOW ME</h4>
+      <h3><strong>FOLLOW ME</strong></h3>
+      <div class="icones">
         <img src="linkedin.png" alt="icone Linkedin" width="30" />
         <img src="github.png" alt="icone github" width="30" />
         <img src="instagram.png" alt="icone Insta" width="30" />
       </div>
+      <h3><strong>CONTACTEZ-MOI ICI</strong></h3>
       <div>
-        <h4>CONTACTEZ-MOI</h4>
         <p>
           <label for="nom">Nom</label>
           <input type="text" id="nom" />
@@ -35,7 +37,7 @@
         </p>
         <p>
           <label for="message">Message</label>
-          <input type="text" id="nom" />
+          <input type="text" id="message" />
           <button><a href="mailto:florepeduzzi@hotmail.fr">Envoyer</a></button>
         </p>
       </div>

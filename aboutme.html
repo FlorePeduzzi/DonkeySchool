@@ -3,13 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Flore Portfolio</title>
   </head>
   <body>
-    <div container>
+    <div class="container">
       <header>
-        <h1>Flore Peduzzi</h1>
-        <h2>Developer</h2>
+        <div class="infos">
+          <h1>FLORE PEDUZZI</h1>
+          <h2>Developer</h2>
+        </div>
+        <!--commentaire menu burger / pour action après media queries
+          <div class="menu">
+          Utilisation d'une checkbox
+          <input type="checkbox" id="hamburger" />
+          Label de la checkbox
+          <label id="hamburger-logo" for="hamburger">☰</label>
+          Le reste du menu
+          <nav>
+            <a href="aboutme.html">ABOUT ME</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="projets.html">PROJETS</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
+        </div>
+          -->
         <nav>
           <a href="aboutme.html">ABOUT ME</a>
           <a href="skills.html">SKILLS</a>
@@ -18,29 +36,27 @@
         </nav>
       </header>
       <main>
-        <div>
-          <h3>ABOUT ME</h3>
-          <img
-            src="photo boules à facettes.jpeg"
-            alt="photo de boules à facette avec des touches clavier"
-            width="350"
-          />
-        </div>
-        <div>
-          <h4>Hello World !</h4>
-          <p>
-            Moi c'est Flore, bienvenue dans mon portfolio ! Née dans les 80's,
-            je suis aujourd'hui développeuse web, mon parcours est jalonné de
-            différents projets créatifs : design, rédaction et événementiel. Je
-            suis passionnée d'informatique et de tout ce qui touche à l'art, à
-            la culture (et à la confiture).
-          </p>
-        </div>
-        <footer>
-          <button><a href="skills.html">Learn more about me</a></button>
-          <p>monportfolio.com</p>
-        </footer>
+        <h3>Hello World !</h3>
+        <img
+          src="photo boules à facettes.jpeg"
+          alt="photo de boules à facette avec des touches clavier"
+          width="250"
+        />
+        <h4></h4>
+        <p>
+          Moi c'est Flore, bienvenue dans mon portfolio ! Née dans les 80's, je
+          suis aujourd'hui développeuse web, mon parcours est jalonné de
+          différents projets créatifs : design, rédaction et événementiel. Je
+          suis passionnée d'informatique et de tout ce qui touche à l'art, à la
+          culture (et à la confiture).
+        </p>
       </main>
+      <footer>
+        <button>
+          <a href="skills.html"><strong>Learn more about me</strong></a>
+        </button>
+        <p>monportfolio.com</p>
+      </footer>
     </div>
   </body>
 </html>
