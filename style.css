@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@media all and (max-width: 949px){
+    .container{
+        width: 90%;
+    }
+  }
 
 body{
     background-color: black;
@@ -6,11 +12,30 @@ body{
 }
 
 .container{
-    background-color: #0f0e0e;
+    background-color: #1b1a1a;
     width: 950px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+  @media all and (max-width: 600px){
+    body {
+        background-color: white;
+        color : Black
+    }
+    .container{
+        background-color: white;
+        color : Black
+    }
+    a{
+    color: black;
+    }
 }
 
 header{
@@ -24,9 +49,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
-    height: 100px;
-    margin: 50px auto;
+    justify-content: space-around;
+    width: 600px;
+    height: 80px;
+    margin: 30px auto;
     padding: 40px;
     border-radius: 15px;
     border-style: dotted;
@@ -36,8 +62,8 @@ header{
 }
 
 header h1{
-    font-weight: 800;
-    font-size: 60px;
+    font-weight: 600;
+    font-size: 50px;
     letter-spacing: 5px;
     word-spacing: 10px;
     padding: 0;
@@ -45,17 +71,12 @@ header h1{
 }
 
 header h2{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 30px;
     letter-spacing: 3px;
     color: rgb(24, 211, 24);
     padding: 0;
     margin: 0;
-}
-
-a{
-    text-decoration: none;
-    color: white;
 }
 
 nav{
@@ -67,14 +88,17 @@ nav{
     margin-bottom: 20px;
     border-bottom: 2px solid rgb(24, 211, 24);
     padding-bottom:20px ;
-
 }
 
 nav :first-child{
     word-spacing: 2px;
 }
 
-main{
+nav a:hover {
+	color: rgb(24, 211, 24);
+}
+
+.main1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,11 +108,12 @@ main{
 
 h3 {
     font-family: 'Source Code Pro', monospace;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 30px;
+    letter-spacing: 10px;
 }
 
-main p{
+.main1_p{
     font-family: 'DM Sans', monospace;
     font-weight: 200;
     width: 800px;
@@ -97,21 +122,32 @@ main p{
     margin: 0;
 }
 
+.main2{
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: center;
+    
+}
 
 button{
     background-color: rgb(24, 211, 24);
-    font-size: medium;
+    border-radius: 15px;
+    border: 2px solid;
+    font-size: large;
+    font-family: 'Source Code Pro', monospace;
 }
 
 button a{
     color: black;
-    font-weight: 400;
 }
 
+
 h4{
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'DM Sans', monospace;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 3px;
     word-spacing: 10px;
     color: rgb(251, 251, 251);
@@ -122,6 +158,8 @@ img{
     border-style: dotted;
     border-radius: 10px;
     opacity: 0.8;
+    max-width: 100%;
+    height: auto;
    }
 
 img:hover{
@@ -132,12 +170,10 @@ img:nth-child(5){
     filter: grayscale(100%);
 }
    
-
-
 h5{
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 15px;
     letter-spacing: 3px;
     word-spacing: 10px;
     color: rgb(251, 251, 251);
@@ -146,8 +182,51 @@ h5{
 
 footer{
     display: flex;
-    justify-content: space-between;
     flex-direction: row-reverse;
-    padding: 80px;
+    justify-content: space-between;
+    padding: 20px;
     margin-top: 10px;
+}
+
+    
+.lastfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 20;
+}
+
+.icones{
+    margin: 30px;
+    width: 7%;
+}
+
+.label{
+    font-family: 'Source code Pro', monospace ;
+    font-size: x-large;
+    color:rgb(24, 211, 24) ;
+}
+
+.input{
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24)
+}
+
+#message {
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24)
+}
+
+#lastbut{
+    padding: 12px;
 }
