@@ -1,47 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-@media all and (max-width: 949px){
-    .container{
-        width: 90%;
-    }
-  }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color : Black;
 }
 
 .container{
-    background-color: #1b1a1a;
-    width: 950px;
-    margin: 20px auto;
-    padding: 10px;
+    background-color: white;
     border-radius: 10px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-  @media all and (max-width: 600px){
-    body {
-        background-color: white;
-        color : Black
-    }
-    .container{
-        background-color: white;
-        color : Black
-    }
-    a{
-    color: black;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
+    width: 100%;
 }
 
 .infos{
@@ -50,55 +32,128 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 600px;
-    height: 80px;
-    margin: 30px auto;
-    padding: 40px;
-    border-radius: 15px;
+    width: 70%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 10px;
     border-style: dotted;
-    border-width: 3px;
+    border-width: 2px;
     border-color: rgb(24, 211, 24)
-
 }
 
 header h1{
     font-weight: 600;
-    font-size: 50px;
+    font-size: 120%;
     letter-spacing: 5px;
     word-spacing: 10px;
-    padding: 0;
-    margin: 0;
 }
 
 header h2{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 90%;
     letter-spacing: 3px;
     color: rgb(24, 211, 24);
-    padding: 0;
-    margin: 0;
 }
 
 nav{
-    font-family: 'DM Sans', monospace;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 18pt;
-    word-spacing: 100px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid rgb(24, 211, 24);
-    padding-bottom:20px ;
+    display: none;
 }
 
-nav :first-child{
-    word-spacing: 2px;
-}
-
-nav a:hover {
-	color: rgb(24, 211, 24);
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .main1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_prez{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+}
+
+.main1_p{
+    font-family: 'DM Sans', monospace;
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 150%;
+    width: 90%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    }
+
+.main_skills{
+    border-radius: 15px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24);
+    background-color: rgb(16, 15, 16);
+    font-weight: 300;
+    width: 90%;
+    margin: 3%;
+}
+
+.date{
+    border: 1px solid;
+    border-color: rgb(24, 211, 24);
+    width: 22%;
+    text-align: center;
+    font-size: 90%;
+}
+
+
+.titres_skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.p_skills{
+    font-family: "Dm Sans", monospace;
+    font-size: 80%;
+    line-height: 150%;
+    text-align:justify;
+    color: white;
+    padding : 5%;
+    padding-top: 0;
+}
+
+h4{
+    font-family: 'DM Sans', monospace;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    padding-left: 5%;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h5{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    color: rgb(251, 251, 251);
+    padding: 10px;
+}
+
+.main4{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,119 +161,89 @@ nav a:hover {
     gap: 20;
 }
 
-h3 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 10px;
-}
-
-.main1_p{
-    font-family: 'DM Sans', monospace;
-    font-weight: 200;
-    width: 800px;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.main2{
-    font-family: 'Source Code Pro', monospace;
+.img_projets{
     display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    text-align: center;
-    
-}
-
-button{
-    background-color: rgb(24, 211, 24);
-    border-radius: 15px;
-    border: 2px solid;
-    font-size: large;
-    font-family: 'Source Code Pro', monospace;
-}
-
-button a{
-    color: black;
-}
-
-
-h4{
-    font-family: 'DM Sans', monospace;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 3px;
-    word-spacing: 10px;
-    color: rgb(251, 251, 251);
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 img{
     border : 2px solid rgb(24, 211, 24);
     border-style: dotted;
     border-radius: 10px;
-    opacity: 0.8;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
    }
-
-img:hover{
-    opacity: 1;
- }
 
 img:nth-child(5){
     filter: grayscale(100%);
 }
-   
-h5{
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 3px;
-    word-spacing: 10px;
-    color: rgb(251, 251, 251);
-}
-
 
 footer{
+    width: 80%;
+    margin-top: 25px;
+}
+.boutonfooter{
+    background-color: rgb(24, 211, 24);
+    border-radius: 15px;
+    border: 2px solid;
+    font-size: 70%;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px;
+}
+
+button{
+    background-color: rgb(24, 211, 24);
+    border-radius: 15px;
+    border: 2px solid;
+    font-size: 80%;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.footerbtn{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+
 }
 
-    
 .lastfooter {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     justify-content: space-between;
-    padding: 20;
+    font-size: 80%;;
+    padding-top: 15%;
 }
 
 .icones{
-    margin: 30px;
-    width: 7%;
+    margin: 20px;
+    width: 12%;
 }
 
 .label{
     font-family: 'Source code Pro', monospace ;
-    font-size: x-large;
-    color:rgb(24, 211, 24) ;
+    font-size: 90%;
+    color: black ;
 }
 
 .input{
-    width: 500px;
+    width: 88%;
     height: 50px;
     margin: 20px;
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(24, 211, 24)
+    border-color: rgb(24, 211, 24);
 }
 
 #message {
-    width: 500px;
+    width: 280px;
     height: 200px;
     margin: 20px;
     margin-bottom: 0;
@@ -227,6 +252,185 @@ footer{
     border-color: rgb(24, 211, 24)
 }
 
-#lastbut{
-    padding: 12px;
+.menus .menu #hamburger-logo {
+    font-size: 10vw;
+}   
+
+
+@media screen and (min-width: 600px){
+    
+    body{
+        background-color: black;
+        color : white
+    }
+    .container{
+        background-color: #1b1a1a;
+        color : white;
+        width : 80%;
+        margin:0 auto;
+        padding: 20px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        }
+
+    nav{
+        width: 95%;
+        font-family: 'DM Sans', monospace;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        font-size: 18px;
+        word-spacing: 80%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid rgb(24, 211, 24);
+        padding-top: 40px;
+        padding-bottom:20px ;
+        
+    }
+    
+    nav :first-child{
+        word-spacing: 2px;
+    }
+    
+    nav a:hover {
+        color: rgb(24, 211, 24);
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 250%;
+
+    }
+    
+    header h2{
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .infos{
+        width: 90%;
+
+    }
+
+    .main1_p{
+        font-weight: 200;
+        font-size: 130%;
+        padding-top: 20px;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .boutonfooter{
+        font-size: 90%;
+        font-weight: 600;
+        color :black
+    }
+
+    .footerbtn{
+        width: 100%;
+    }
+    
+
+    .lastfooter {
+        padding-top: 7%;
+    }
+
+    h3 {
+        font-size: 150%;
+    }
+
+    h4{
+        padding-bottom: 3%;
+    }
+
+    .main_skills{
+        width: 100%;
+        font-size: 120%
+    }
+
+    .titres_skills{
+        padding-bottom: 20px;
+    }
+    .label{
+        color: rgb(24, 211, 24) ;
+    }
+
+    .input{
+        width: 400px;
+    }
+
+    #message{
+        width: 400px;
+    }
+
+    button a{
+        color: black;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    
+    .input{
+        width: 600px;
+    }
+
+    #message{
+        width: 600px;
+    }
+    
+    .label{
+        font-size: 160% ;
+    }
+
+    .lastfooter {
+        font-size: 150%;
+    }
+
+    .boutonfooter{
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+    nav{
+        font-size: 150%;
+    }
+
+    header h1{
+        font-weight: 600;
+        font-size: 300%;
+
+    }
+    
+    header h2{
+        font-weight: 400;
+        font-size: 250%;
+    }
+
+    .main1_p{
+        font-size: 160%;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    h4{
+        font-size: 150%;
+    }
+
+    h5{
+        font-size: 120%;
+    }
+
+    .p_skills{
+        font-size: 120%;
+    }
+
 }
